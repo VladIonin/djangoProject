@@ -5,9 +5,9 @@
    git clone https://github.com/ваш-логин/ваш-репозиторий.git
    ```
 2. Запустите сервер:
-  ```
-  python manage.py runserver
-  ```
+   ```
+   python manage.py runserver
+   ```
 
 Сервер будет доступен по адресу http://localhost:8000/
 
