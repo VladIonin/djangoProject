@@ -1,0 +1,26 @@
+{% extends 'main/temp.html' %}
+
+{% block title %}Добавить{% endblock %}
+{% block add-btn %}active{% endblock %}
+
+{% block content %}
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="card">
+            <h5 class="card-header">Добавить фотокарточку {{ error }}</h5>
+            <div class="card-body p-4">
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="mb-4">
+                        <label for="title" class="form-label">Описание:</label>
+                        {{ form.title }}
+                    </div>
+                    <div class="mb-4">
+                        <label for="photo" class="form-label">Фотокарточка:</label>
+                        {{ form.photo }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">Принять</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
