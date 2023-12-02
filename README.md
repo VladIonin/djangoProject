@@ -2,7 +2,7 @@
 
 1. Клонируйте репозиторий: 
    ```
-   git clone https://github.com/ваш-логин/ваш-репозиторий.git
+   git clone https://github.com/VladIonin/djangoProject
    ```
 2. Запустите сервер:
    ```
